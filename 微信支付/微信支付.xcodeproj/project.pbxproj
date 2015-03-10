@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E049F3CA1AAEB91000853DF5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E049F3C81AAEB91000853DF5 /* ViewController.m */; };
+		E049F3CB1AAEB91000853DF5 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E049F3C91AAEB91000853DF5 /* ViewController.xib */; };
+		E049F3F51AAEBA5900853DF5 /* CommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E049F3E51AAEBA5900853DF5 /* CommonUtil.m */; };
+		E049F3F61AAEBA5900853DF5 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E049F3E71AAEBA5900853DF5 /* libWeChatSDK.a */; };
+		E049F3F71AAEBA5900853DF5 /* WXPayClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E049F3EB1AAEBA5900853DF5 /* WXPayClient.m */; };
+		E049F3FA1AAEBCBC00853DF5 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E049F3F91AAEBCBC00853DF5 /* libz.1.2.5.dylib */; };
+		E049F3FC1AAEBD2900853DF5 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E049F3FB1AAEBD2900853DF5 /* libsqlite3.0.dylib */; };
+		E049F4161AAECB4D00853DF5 /* NSAlert+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E049F4001AAECB4D00853DF5 /* NSAlert+MKNetworkKitAdditions.m */; };
+		E049F4171AAECB4D00853DF5 /* NSData+MKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = E049F4021AAECB4D00853DF5 /* NSData+MKBase64.m */; };
+		E049F4181AAECB4D00853DF5 /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = E049F4041AAECB4D00853DF5 /* NSDate+RFC1123.m */; };
+		E049F4191AAECB4D00853DF5 /* NSDictionary+RequestEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = E049F4061AAECB4D00853DF5 /* NSDictionary+RequestEncoding.m */; };
+		E049F41A1AAECB4D00853DF5 /* NSString+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E049F4081AAECB4D00853DF5 /* NSString+MKNetworkKitAdditions.m */; };
+		E049F41B1AAECB4D00853DF5 /* UIAlertView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E049F40A1AAECB4D00853DF5 /* UIAlertView+MKNetworkKitAdditions.m */; };
+		E049F41C1AAECB4D00853DF5 /* UIImageView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E049F40C1AAECB4D00853DF5 /* UIImageView+MKNetworkKitAdditions.m */; };
+		E049F41D1AAECB4D00853DF5 /* MKNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E049F40E1AAECB4D00853DF5 /* MKNetworkEngine.m */; };
+		E049F41E1AAECB4D00853DF5 /* MKNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E049F4111AAECB4D00853DF5 /* MKNetworkOperation.m */; };
+		E049F41F1AAECB4D00853DF5 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E049F4141AAECB4D00853DF5 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E049F4201AAECB4D00853DF5 /* readme_MKNetwork.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E049F4151AAECB4D00853DF5 /* readme_MKNetwork.rtf */; };
+		E0BFDC3D1AAEB8EF001CEB5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BFDC3C1AAEB8EF001CEB5A /* Foundation.framework */; };
+		E0BFDC3F1AAEB8EF001CEB5A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BFDC3E1AAEB8EF001CEB5A /* CoreGraphics.framework */; };
+		E0BFDC411AAEB8EF001CEB5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BFDC401AAEB8EF001CEB5A /* UIKit.framework */; };
+		E0BFDC471AAEB8EF001CEB5A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0BFDC451AAEB8EF001CEB5A /* InfoPlist.strings */; };
+		E0BFDC491AAEB8EF001CEB5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BFDC481AAEB8EF001CEB5A /* main.m */; };
+		E0BFDC4D1AAEB8EF001CEB5A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0BFDC4C1AAEB8EF001CEB5A /* AppDelegate.mm */; };
+		E0BFDC4F1AAEB8EF001CEB5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0BFDC4E1AAEB8EF001CEB5A /* Images.xcassets */; };
+		E0BFDC561AAEB8EF001CEB5A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BFDC551AAEB8EF001CEB5A /* XCTest.framework */; };
+		E0BFDC571AAEB8EF001CEB5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BFDC3C1AAEB8EF001CEB5A /* Foundation.framework */; };
+		E0BFDC581AAEB8EF001CEB5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BFDC401AAEB8EF001CEB5A /* UIKit.framework */; };
+		E0BFDC601AAEB8EF001CEB5A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0BFDC5E1AAEB8EF001CEB5A /* InfoPlist.strings */; };
+		E0BFDC621AAEB8EF001CEB5A /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BFDC611AAEB8EF001CEB5A /* ____Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0BFDC591AAEB8EF001CEB5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0BFDC311AAEB8EE001CEB5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0BFDC381AAEB8EF001CEB5A;
+			remoteInfo = "微信支付";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E049F3C71AAEB91000853DF5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E049F3C81AAEB91000853DF5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E049F3C91AAEB91000853DF5 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		E049F3E41AAEBA5900853DF5 /* CommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtil.h; sourceTree = "<group>"; };
+		E049F3E51AAEBA5900853DF5 /* CommonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtil.m; sourceTree = "<group>"; };
+		E049F3E71AAEBA5900853DF5 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		E049F3E81AAEBA5900853DF5 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		E049F3E91AAEBA5900853DF5 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		E049F3EA1AAEBA5900853DF5 /* WXPayClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXPayClient.h; sourceTree = "<group>"; };
+		E049F3EB1AAEBA5900853DF5 /* WXPayClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXPayClient.m; sourceTree = "<group>"; };
+		E049F3F81AAEBAD900853DF5 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		E049F3F91AAEBCBC00853DF5 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		E049F3FB1AAEBD2900853DF5 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		E049F3FF1AAECB4D00853DF5 /* NSAlert+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAlert+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		E049F4001AAECB4D00853DF5 /* NSAlert+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAlert+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		E049F4011AAECB4D00853DF5 /* NSData+MKBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MKBase64.h"; sourceTree = "<group>"; };
+		E049F4021AAECB4D00853DF5 /* NSData+MKBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MKBase64.m"; sourceTree = "<group>"; };
+		E049F4031AAECB4D00853DF5 /* NSDate+RFC1123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RFC1123.h"; sourceTree = "<group>"; };
+		E049F4041AAECB4D00853DF5 /* NSDate+RFC1123.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RFC1123.m"; sourceTree = "<group>"; };
+		E049F4051AAECB4D00853DF5 /* NSDictionary+RequestEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RequestEncoding.h"; sourceTree = "<group>"; };
+		E049F4061AAECB4D00853DF5 /* NSDictionary+RequestEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RequestEncoding.m"; sourceTree = "<group>"; };
+		E049F4071AAECB4D00853DF5 /* NSString+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		E049F4081AAECB4D00853DF5 /* NSString+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		E049F4091AAECB4D00853DF5 /* UIAlertView+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		E049F40A1AAECB4D00853DF5 /* UIAlertView+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		E049F40B1AAECB4D00853DF5 /* UIImageView+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		E049F40C1AAECB4D00853DF5 /* UIImageView+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		E049F40D1AAECB4D00853DF5 /* MKNetworkEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkEngine.h; sourceTree = "<group>"; };
+		E049F40E1AAECB4D00853DF5 /* MKNetworkEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkEngine.m; sourceTree = "<group>"; };
+		E049F40F1AAECB4D00853DF5 /* MKNetworkKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkKit.h; sourceTree = "<group>"; };
+		E049F4101AAECB4D00853DF5 /* MKNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkOperation.h; sourceTree = "<group>"; };
+		E049F4111AAECB4D00853DF5 /* MKNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkOperation.m; sourceTree = "<group>"; };
+		E049F4131AAECB4D00853DF5 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		E049F4141AAECB4D00853DF5 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		E049F4151AAECB4D00853DF5 /* readme_MKNetwork.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = readme_MKNetwork.rtf; sourceTree = "<group>"; };
+		E0BFDC391AAEB8EF001CEB5A /* 微信支付.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "微信支付.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0BFDC3C1AAEB8EF001CEB5A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E0BFDC3E1AAEB8EF001CEB5A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E0BFDC401AAEB8EF001CEB5A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E0BFDC441AAEB8EF001CEB5A /* 微信支付-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "微信支付-Info.plist"; sourceTree = "<group>"; };
+		E0BFDC461AAEB8EF001CEB5A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E0BFDC481AAEB8EF001CEB5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E0BFDC4A1AAEB8EF001CEB5A /* 微信支付-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "微信支付-Prefix.pch"; sourceTree = "<group>"; };
+		E0BFDC4B1AAEB8EF001CEB5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E0BFDC4C1AAEB8EF001CEB5A /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		E0BFDC4E1AAEB8EF001CEB5A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E0BFDC541AAEB8EF001CEB5A /* 微信支付Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "微信支付Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0BFDC551AAEB8EF001CEB5A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E0BFDC5D1AAEB8EF001CEB5A /* 微信支付Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "微信支付Tests-Info.plist"; sourceTree = "<group>"; };
+		E0BFDC5F1AAEB8EF001CEB5A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E0BFDC611AAEB8EF001CEB5A /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0BFDC361AAEB8EF001CEB5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E049F3FC1AAEBD2900853DF5 /* libsqlite3.0.dylib in Frameworks */,
+				E049F3FA1AAEBCBC00853DF5 /* libz.1.2.5.dylib in Frameworks */,
+				E0BFDC3F1AAEB8EF001CEB5A /* CoreGraphics.framework in Frameworks */,
+				E0BFDC411AAEB8EF001CEB5A /* UIKit.framework in Frameworks */,
+				E049F3F61AAEBA5900853DF5 /* libWeChatSDK.a in Frameworks */,
+				E0BFDC3D1AAEB8EF001CEB5A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0BFDC511AAEB8EF001CEB5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0BFDC561AAEB8EF001CEB5A /* XCTest.framework in Frameworks */,
+				E0BFDC581AAEB8EF001CEB5A /* UIKit.framework in Frameworks */,
+				E0BFDC571AAEB8EF001CEB5A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E049F3CC1AAEBA5900853DF5 /* WeiXinZhiFu */ = {
+			isa = PBXGroup;
+			children = (
+				E049F3FD1AAECB4D00853DF5 /* MKNetworkKit */,
+				E049F3F81AAEBAD900853DF5 /* Constant.h */,
+				E049F3E41AAEBA5900853DF5 /* CommonUtil.h */,
+				E049F3E51AAEBA5900853DF5 /* CommonUtil.m */,
+				E049F3E61AAEBA5900853DF5 /* WeChatSDK_64 */,
+				E049F3EA1AAEBA5900853DF5 /* WXPayClient.h */,
+				E049F3EB1AAEBA5900853DF5 /* WXPayClient.m */,
+			);
+			path = WeiXinZhiFu;
+			sourceTree = "<group>";
+		};
+		E049F3E61AAEBA5900853DF5 /* WeChatSDK_64 */ = {
+			isa = PBXGroup;
+			children = (
+				E049F3E71AAEBA5900853DF5 /* libWeChatSDK.a */,
+				E049F3E81AAEBA5900853DF5 /* WXApi.h */,
+				E049F3E91AAEBA5900853DF5 /* WXApiObject.h */,
+			);
+			path = WeChatSDK_64;
+			sourceTree = "<group>";
+		};
+		E049F3FD1AAECB4D00853DF5 /* MKNetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				E049F3FE1AAECB4D00853DF5 /* Categories */,
+				E049F40D1AAECB4D00853DF5 /* MKNetworkEngine.h */,
+				E049F40E1AAECB4D00853DF5 /* MKNetworkEngine.m */,
+				E049F40F1AAECB4D00853DF5 /* MKNetworkKit.h */,
+				E049F4101AAECB4D00853DF5 /* MKNetworkOperation.h */,
+				E049F4111AAECB4D00853DF5 /* MKNetworkOperation.m */,
+				E049F4121AAECB4D00853DF5 /* Reachability */,
+				E049F4151AAECB4D00853DF5 /* readme_MKNetwork.rtf */,
+			);
+			path = MKNetworkKit;
+			sourceTree = "<group>";
+		};
+		E049F3FE1AAECB4D00853DF5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E049F3FF1AAECB4D00853DF5 /* NSAlert+MKNetworkKitAdditions.h */,
+				E049F4001AAECB4D00853DF5 /* NSAlert+MKNetworkKitAdditions.m */,
+				E049F4011AAECB4D00853DF5 /* NSData+MKBase64.h */,
+				E049F4021AAECB4D00853DF5 /* NSData+MKBase64.m */,
+				E049F4031AAECB4D00853DF5 /* NSDate+RFC1123.h */,
+				E049F4041AAECB4D00853DF5 /* NSDate+RFC1123.m */,
+				E049F4051AAECB4D00853DF5 /* NSDictionary+RequestEncoding.h */,
+				E049F4061AAECB4D00853DF5 /* NSDictionary+RequestEncoding.m */,
+				E049F4071AAECB4D00853DF5 /* NSString+MKNetworkKitAdditions.h */,
+				E049F4081AAECB4D00853DF5 /* NSString+MKNetworkKitAdditions.m */,
+				E049F4091AAECB4D00853DF5 /* UIAlertView+MKNetworkKitAdditions.h */,
+				E049F40A1AAECB4D00853DF5 /* UIAlertView+MKNetworkKitAdditions.m */,
+				E049F40B1AAECB4D00853DF5 /* UIImageView+MKNetworkKitAdditions.h */,
+				E049F40C1AAECB4D00853DF5 /* UIImageView+MKNetworkKitAdditions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		E049F4121AAECB4D00853DF5 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				E049F4131AAECB4D00853DF5 /* Reachability.h */,
+				E049F4141AAECB4D00853DF5 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		E0BFDC301AAEB8EE001CEB5A = {
+			isa = PBXGroup;
+			children = (
+				E0BFDC421AAEB8EF001CEB5A /* 微信支付 */,
+				E0BFDC5B1AAEB8EF001CEB5A /* 微信支付Tests */,
+				E0BFDC3B1AAEB8EF001CEB5A /* Frameworks */,
+				E0BFDC3A1AAEB8EF001CEB5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E0BFDC3A1AAEB8EF001CEB5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0BFDC391AAEB8EF001CEB5A /* 微信支付.app */,
+				E0BFDC541AAEB8EF001CEB5A /* 微信支付Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0BFDC3B1AAEB8EF001CEB5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E049F3FB1AAEBD2900853DF5 /* libsqlite3.0.dylib */,
+				E049F3F91AAEBCBC00853DF5 /* libz.1.2.5.dylib */,
+				E0BFDC3C1AAEB8EF001CEB5A /* Foundation.framework */,
+				E0BFDC3E1AAEB8EF001CEB5A /* CoreGraphics.framework */,
+				E0BFDC401AAEB8EF001CEB5A /* UIKit.framework */,
+				E0BFDC551AAEB8EF001CEB5A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0BFDC421AAEB8EF001CEB5A /* 微信支付 */ = {
+			isa = PBXGroup;
+			children = (
+				E049F3CC1AAEBA5900853DF5 /* WeiXinZhiFu */,
+				E0BFDC4B1AAEB8EF001CEB5A /* AppDelegate.h */,
+				E0BFDC4C1AAEB8EF001CEB5A /* AppDelegate.mm */,
+				E049F3C71AAEB91000853DF5 /* ViewController.h */,
+				E049F3C81AAEB91000853DF5 /* ViewController.m */,
+				E049F3C91AAEB91000853DF5 /* ViewController.xib */,
+				E0BFDC4E1AAEB8EF001CEB5A /* Images.xcassets */,
+				E0BFDC431AAEB8EF001CEB5A /* Supporting Files */,
+			);
+			path = "微信支付";
+			sourceTree = "<group>";
+		};
+		E0BFDC431AAEB8EF001CEB5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0BFDC441AAEB8EF001CEB5A /* 微信支付-Info.plist */,
+				E0BFDC451AAEB8EF001CEB5A /* InfoPlist.strings */,
+				E0BFDC481AAEB8EF001CEB5A /* main.m */,
+				E0BFDC4A1AAEB8EF001CEB5A /* 微信支付-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0BFDC5B1AAEB8EF001CEB5A /* 微信支付Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E0BFDC611AAEB8EF001CEB5A /* ____Tests.m */,
+				E0BFDC5C1AAEB8EF001CEB5A /* Supporting Files */,
+			);
+			path = "微信支付Tests";
+			sourceTree = "<group>";
+		};
+		E0BFDC5C1AAEB8EF001CEB5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0BFDC5D1AAEB8EF001CEB5A /* 微信支付Tests-Info.plist */,
+				E0BFDC5E1AAEB8EF001CEB5A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0BFDC381AAEB8EF001CEB5A /* 微信支付 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0BFDC651AAEB8EF001CEB5A /* Build configuration list for PBXNativeTarget "微信支付" */;
+			buildPhases = (
+				E0BFDC351AAEB8EF001CEB5A /* Sources */,
+				E0BFDC361AAEB8EF001CEB5A /* Frameworks */,
+				E0BFDC371AAEB8EF001CEB5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "微信支付";
+			productName = "微信支付";
+			productReference = E0BFDC391AAEB8EF001CEB5A /* 微信支付.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E0BFDC531AAEB8EF001CEB5A /* 微信支付Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0BFDC681AAEB8EF001CEB5A /* Build configuration list for PBXNativeTarget "微信支付Tests" */;
+			buildPhases = (
+				E0BFDC501AAEB8EF001CEB5A /* Sources */,
+				E0BFDC511AAEB8EF001CEB5A /* Frameworks */,
+				E0BFDC521AAEB8EF001CEB5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0BFDC5A1AAEB8EF001CEB5A /* PBXTargetDependency */,
+			);
+			name = "微信支付Tests";
+			productName = "微信支付Tests";
+			productReference = E0BFDC541AAEB8EF001CEB5A /* 微信支付Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0BFDC311AAEB8EE001CEB5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = bin.yan;
+				TargetAttributes = {
+					E0BFDC531AAEB8EF001CEB5A = {
+						TestTargetID = E0BFDC381AAEB8EF001CEB5A;
+					};
+				};
+			};
+			buildConfigurationList = E0BFDC341AAEB8EE001CEB5A /* Build configuration list for PBXProject "微信支付" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E0BFDC301AAEB8EE001CEB5A;
+			productRefGroup = E0BFDC3A1AAEB8EF001CEB5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0BFDC381AAEB8EF001CEB5A /* 微信支付 */,
+				E0BFDC531AAEB8EF001CEB5A /* 微信支付Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0BFDC371AAEB8EF001CEB5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0BFDC471AAEB8EF001CEB5A /* InfoPlist.strings in Resources */,
+				E049F4201AAECB4D00853DF5 /* readme_MKNetwork.rtf in Resources */,
+				E049F3CB1AAEB91000853DF5 /* ViewController.xib in Resources */,
+				E0BFDC4F1AAEB8EF001CEB5A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0BFDC521AAEB8EF001CEB5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0BFDC601AAEB8EF001CEB5A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0BFDC351AAEB8EF001CEB5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E049F4161AAECB4D00853DF5 /* NSAlert+MKNetworkKitAdditions.m in Sources */,
+				E049F4191AAECB4D00853DF5 /* NSDictionary+RequestEncoding.m in Sources */,
+				E049F3F71AAEBA5900853DF5 /* WXPayClient.m in Sources */,
+				E049F41B1AAECB4D00853DF5 /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
+				E049F3CA1AAEB91000853DF5 /* ViewController.m in Sources */,
+				E049F41A1AAECB4D00853DF5 /* NSString+MKNetworkKitAdditions.m in Sources */,
+				E049F3F51AAEBA5900853DF5 /* CommonUtil.m in Sources */,
+				E049F41F1AAECB4D00853DF5 /* Reachability.m in Sources */,
+				E049F4181AAECB4D00853DF5 /* NSDate+RFC1123.m in Sources */,
+				E049F41D1AAECB4D00853DF5 /* MKNetworkEngine.m in Sources */,
+				E0BFDC4D1AAEB8EF001CEB5A /* AppDelegate.mm in Sources */,
+				E0BFDC491AAEB8EF001CEB5A /* main.m in Sources */,
+				E049F41E1AAECB4D00853DF5 /* MKNetworkOperation.m in Sources */,
+				E049F41C1AAECB4D00853DF5 /* UIImageView+MKNetworkKitAdditions.m in Sources */,
+				E049F4171AAECB4D00853DF5 /* NSData+MKBase64.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0BFDC501AAEB8EF001CEB5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0BFDC621AAEB8EF001CEB5A /* ____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0BFDC5A1AAEB8EF001CEB5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0BFDC381AAEB8EF001CEB5A /* 微信支付 */;
+			targetProxy = E0BFDC591AAEB8EF001CEB5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E0BFDC451AAEB8EF001CEB5A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0BFDC461AAEB8EF001CEB5A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E0BFDC5E1AAEB8EF001CEB5A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0BFDC5F1AAEB8EF001CEB5A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0BFDC631AAEB8EF001CEB5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E0BFDC641AAEB8EF001CEB5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0BFDC661AAEB8EF001CEB5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "微信支付/微信支付-Prefix.pch";
+				INFOPLIST_FILE = "微信支付/微信支付-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/微信支付/WeiXinZhiFu/WeChatSDK_64",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E0BFDC671AAEB8EF001CEB5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "微信支付/微信支付-Prefix.pch";
+				INFOPLIST_FILE = "微信支付/微信支付-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/微信支付/WeiXinZhiFu/WeChatSDK_64",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E0BFDC691AAEB8EF001CEB5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/微信支付.app/微信支付";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "微信支付/微信支付-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "微信支付Tests/微信支付Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E0BFDC6A1AAEB8EF001CEB5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/微信支付.app/微信支付";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "微信支付/微信支付-Prefix.pch";
+				INFOPLIST_FILE = "微信支付Tests/微信支付Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0BFDC341AAEB8EE001CEB5A /* Build configuration list for PBXProject "微信支付" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0BFDC631AAEB8EF001CEB5A /* Debug */,
+				E0BFDC641AAEB8EF001CEB5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0BFDC651AAEB8EF001CEB5A /* Build configuration list for PBXNativeTarget "微信支付" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0BFDC661AAEB8EF001CEB5A /* Debug */,
+				E0BFDC671AAEB8EF001CEB5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0BFDC681AAEB8EF001CEB5A /* Build configuration list for PBXNativeTarget "微信支付Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0BFDC691AAEB8EF001CEB5A /* Debug */,
+				E0BFDC6A1AAEB8EF001CEB5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0BFDC311AAEB8EE001CEB5A /* Project object */;
+}
